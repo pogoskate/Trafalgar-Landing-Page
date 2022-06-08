@@ -1,0 +1,30 @@
+{
+  "name": "trafalgar-landing-page",
+  "version": "1.0.0",
+  "description": "first portfolio project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pogoskate/Trafalgar-Landing-Page.git"
+  },
+  "keywords": [
+    "trafalgar",
+    "landing",
+    "page"
+  ],
+  "author": "Patryk Jalowy",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/pogoskate/Trafalgar-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/pogoskate/Trafalgar-Landing-Page#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "grunt-cli": "^1.4.3",
+    "node-sass": "^7.0.1",
+    "uuid": "^8.3.2"
+  }
+}
