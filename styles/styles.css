@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.625rem;
+}
+/*# sourceMappingURL=styles.css.map */
