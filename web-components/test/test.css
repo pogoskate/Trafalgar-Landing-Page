@@ -1,3 +1,5 @@
+@import "../../bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css";
+
 .test-component-container {
     height: 100%;
     width: 100%;
