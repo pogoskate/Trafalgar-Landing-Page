@@ -22,10 +22,11 @@ class Test extends HTMLElement {
 
         button.addEventListener('click', () => {
             alert('Button has been clicked!')
-        })
+        });
     }
 
     connectedCallback() {
+        console.log('Component initiated!');
     }
 
     render() {
