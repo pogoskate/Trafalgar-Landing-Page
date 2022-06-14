@@ -11,7 +11,7 @@ template.innerHTML = `
     <button id="click-me-button">Click Me</button>
 </div>`;
 
-class Test extends HTMLElement {
+class TestComponent extends HTMLElement {
 
     constructor() {
         super();
@@ -35,4 +35,4 @@ class Test extends HTMLElement {
 
 }
 
-window.customElements.define('app-test', Test);
+window.customElements.define('app-test', TestComponent);
