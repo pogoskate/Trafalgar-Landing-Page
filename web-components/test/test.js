@@ -2,26 +2,7 @@ const template = document.createElement('template');
 
 template.innerHTML = `
 <style>
-  .test-component-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    text-align: center;    
-  }
-  h3 {
-    color: red;
-  }
-  p {
-    color: steelblue;
-  }
-  
-  button {
-      padding: 1rem;
-      width: 200px;
-  }
+    @import "web-components/test/test.css";
 </style>
 
 <div class="test-component-container">
