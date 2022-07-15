@@ -1,36 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.cssgit ">
-    <link
-      rel="stylesheet"
-      href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Trafalgar Landing Page</title>
-  </head>
-  <body class="mx-5">
-    <header><heavy-navbar item-count="5" position="fixed-scroll>
-      <a href="#" slot="item-1">Home</a>
-      <a href="#find-a-doctor" slot="item-2">Find a doctor</a>
-      <a href="#apps" slot="item-3">Apps</a>
-      <a href="#testimonials" slot="item-4">Testimonials</a>
-      <a href="about-us" slot="item-5">About us</a>
-  </heavy-navbar></header>
-    <app-test></app-test>
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
-
-    <!-- Web Components Import -->
-
-    <script src="web-components/test/test.js"></script>
-    <script src='node_modules/heavy-navbar/dist/heavynavbar.js'></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<navigation-bar active="home" breakpoint="576">
+  <a slot="brand" href="#">Navbar</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</navigation-bar>
+<script src="/web-components/navbar-webcomp/navbar.js"></script>
 </html>
