@@ -1,0 +1,36 @@
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 0;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+}
+div {
+    background-color: #333333;
+    border-radius: 4px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+    width: 35px;
+}
+.change div:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+.change div:nth-child(2) {
+    opacity: 0;
+}
+.change div:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+.nav--show {
+    transform: translateY(152px) !important;
+}
+@media screen and (min-width: 650px) {
+    button {
+        display: none;
+    }
+}

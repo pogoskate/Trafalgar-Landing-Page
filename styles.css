@@ -1,5 +1,11 @@
+html {
+	font-family: 'Mulish', sans-serif;
+}
+
+/* cleanup needed */
 heavy-navbar {
 	--heavy-navbar-background: #ffffff;
 	--heavy-navbar-color: #000000;
 	--heavy-navbar-hover-color: #333333;
 }
+
