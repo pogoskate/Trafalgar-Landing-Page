@@ -5,8 +5,9 @@ navbar.innerHTML = `
     display: flex;
     min-height: 48px;
     max-height: 100px;
+    margin: 2rem 1rem;
     justify-content: space-between;
-    width: 100%;
+    width: auto;
     z-index: 99;
   }
   header div {
@@ -14,13 +15,12 @@ navbar.innerHTML = `
     background-color: var(--navbar-bg-color);
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0.5rem;
     width: 100%;
     z-index: 99;
   }
   header nav {
     background-color: var(--navbar-menu-color);
-    border-bottom: 1px solid rgba(51, 51, 51, 0.1);
     box-shadow: var(--navbar-shadow);
     display: flex;
     flex-direction: column;
@@ -30,8 +30,10 @@ navbar.innerHTML = `
   }
   ::slotted(a) {
     color: var(--navbar-link-color);
-    padding: 0.5rem 0 0.5rem 1rem;
+    padding: 1rem;
+    font-size: 1.125 rem;
     text-decoration: none;
+    width: max-content;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
   }
   ::slotted(a:hover) {
@@ -39,8 +41,9 @@ navbar.innerHTML = `
   }
   .logo::slotted(a) {
       color: #333333;
-      font-family: 'Dosis', Arial, Helvetica, sans-serif;
-      font-size: 2em;
+      font-family: 'Mulish', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
       max-height: 100px;
       padding: 0;
       text-decoration: none;
@@ -50,12 +53,13 @@ navbar.innerHTML = `
   }
   ::slotted(.nav-link--active) {
     color: var(--navbar-link-active-color) !important;
+    font-weight: 700;
   }
 </style>
 <header>
-  <div>
+<div>
     <slot name="brand" class="logo"></slot>
-  </div>
+</div>
   <nav>
     <slot></slot>
   </nav>
@@ -86,7 +90,7 @@ class Navbar extends HTMLElement {
       links: document.querySelectorAll('navigation-bar a'),
     }
 
-    const dist = data.nav.offsetHeight - 32
+    const dist = data.nav.offsetHeight - 48
 
     this.checkIfMobile(data.nav, props.breakpoint, dist)
 
@@ -135,6 +139,7 @@ class Navbar extends HTMLElement {
         position: relative !important;
         transform: translateY(0) !important;
         z-index: unset;
+        border: none;
       }
       header nav a {
         padding: 0 1rem;
@@ -195,13 +200,15 @@ navbarBtn.innerHTML = `
   .nav--show {
     transform: translateY(152px) !important;
   }
-  @media screen and (min-width: 36rem) {
+  @media screen and (min-width: 650px) {
     button {
       display: none;
     }
   }
 </style>
 <button aria-label="Menu Button">
+  <div></div>
+  <div></div>
   <div></div>
   <div></div>
   <div></div>
